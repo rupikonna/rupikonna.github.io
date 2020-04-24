@@ -1,0 +1,42 @@
+header {
+    max-width: 800px;
+    border: #0000FF solid 1px;
+    background: #0000FF;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 2em;
+    color: white;
+}
+
+body {
+    padding-top: 1em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+footer {
+    background: #0000FF;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1em;
+    padding: .5em;
+    color: white;
+}
+
+.byuilink {
+    color: white;
+}
+
+.kenphoto {
+    margin-top: 30px;
+    line-height: 10px;
+    margin-right: 20px;
+    height: 180px;
+    width: 150px;
+    float: right;
+    box-shadow: 10px 10px 8px #0e0a0a;
+}
+
+.dateSaved {
+    color: #ffff00;
+}
