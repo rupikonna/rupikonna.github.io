@@ -5,14 +5,17 @@
 .inline-list.li {
     display: inline;
     padding: 0 2em;
+    border-color: yellow;
 }
 
 .flex-container {
     list-style-type: none;
     text-align: center;
+    border-color: blue;
 }
 
 .flex-container.li {
+    background-color: blue;
     padding: 0.8em 0;
 }
 
@@ -25,17 +28,43 @@
     flex-shrink: 1;
     flex-grow: 1;
 }
+
 .flex-wrapper {
     display: flex;
     flex-wrap: wrap;
 }
+
 .grid-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    border-width: 12px;
+    border-color: yellow;
 }
+
 .grid-one {
     grid-column: 1 / 3;
+
 }
+
+.menu {
+    background-color: black;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.menu li:first-child {
+    display: block;
+}
+
+.menu a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.responsive {}
+
+
 
 @media screen and (min-width: 390px) {
     .flex-container {
@@ -43,19 +72,41 @@
         justify-content: space-between;
         padding: 0;
     }
+
+    .menu {
+        color: yellow;
+        text-decoration: none;
+    }
 }
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 600px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
     .flex-child {
         flex-basis: 50%;
     }
+
     .grid-wrapper {
         grid-template-columns: 1fr 1fr;
     }
 }
-@media screen and (min-width: 960px){
+
+@media screen and (min-width: 960px) {
     .flex-child {
         flex-basis: 25%;
     }
+
     .grid-wrapper {
         grid-template-columns: 1fr 1fr 1fr;
     }
