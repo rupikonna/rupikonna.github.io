@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width: 270px) {
+    #container: {
+        min-height: 100%
+    }
+
+    #main {
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+
+    .menu {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+    }
+
+    .menu li:first-child {
+        display: block;
+    }
+
+    .menu li {
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+
+    .menu a:hover {
+        color: white;
+        background-color: #2b235a;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+    header {
+        border: #31255a solid 1px;
+        background: #31255a;
+        border-radius: 5px;
+        text-align: center;
+        color: white;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font: tohoma;
+        font-size: 30px;
+    }
+
+    h2 {
+        font: tohoma;
+        font-size: 20px;
+    }
+
+    .logo {
+        float: left;
+        padding: 10px;
+        height: 120px;
+        width: 120px;
+    }
+
+    .block1 {
+        font: segoe;
+        text-align: center;
+        font-size: 35px;
+        border-radius: 5px;
+        border-color: black;
+        width: 80%;
+        height: 200px;
+        background-color: #75b4e3;
+        margin: 20px auto;
+        padding: 10px, 3px, 3px;
+    }
+
+    .block2 {
+        font: segoe;
+        text-align: center;
+        font-size: 35px;
+        border-radius: 5px;
+        border-color: black;
+        width: 80%;
+        height: 200px;
+        background-color: #75b4e3;
+        margin: 20px auto;
+        padding: 10px, 3px, 3px;
+    }
+
+    .block3 {
+        font: segoe;
+        text-align: center;
+        font-size: 35px;
+        border-radius: 5px;
+        border-color: black;
+        width: 80%;
+        height: 200px;
+        background-color: #75b4e3;
+        margin: 20px auto;
+        padding: 10px, 3px, 3px;
+    }
+
+    .block4 {
+        font: segoe;
+        text-align: center;
+        font-size: 35px;
+        border-radius: 5px;
+        border-color: black;
+        width: 80%;
+        height: 200px;
+        background-color: #75b4e3;
+        margin: 20px auto;
+        padding: 10px, 3px, 3px;
+    }
+
+    .footer {
+        margin-top: -100px;
+        height: 50px;
+        background: #31255a;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 1em;
+        padding: .5em;
+        color: white;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        clear: both;
+    }
+
+    .byuilink {
+        color: white;
+    }
+
+    .dateSaved {
+        color: #ffff00;
+    }
+
+    /*----- Clearfix: Force an Element no to collapse -----*/
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+/*----- Medium Screen Size -----*/
+@media screen and (min-width: 600px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+}
+
+/*----- Large Screen Size -----*/
+@media screen and (min-width: 960px) {
+    .menu li a: {
+        padding: .6rem 1rem;
+    }
+}
