@@ -100,9 +100,8 @@ h3 {
     position: relative;
     width: 80%;
     height: 250px;
-    border-radius: 5px;
     background-color: white;
-    margin: 20px auto;
+    margin: 60px auto;
     padding: 10px, 3px, 3px;
 }
 
@@ -127,25 +126,11 @@ h3 {
     box-shadow: 0 0 30px #777;
     border-radius: 5px;
 }
+.current {
+    height: 8px;
+    width: auto;
 
-.weekdays {
-    font: segoe;
-    text-align: center;
-    font-size: 35px;
-    border-radius: 5px;
-    border-color: black;
-    width: 80%;
-    height: 200px;
-    background-color: #75b4e3;
-    margin: 20px auto;
-    padding: 10px, 3px, 3px;
 }
-.forcast {
-    display: block;
-    width: 25px;
-    height: 25px;
-}
-
 .article {
     font: segoe;
     border-radius: 5px;
@@ -180,7 +165,7 @@ h3 {
     padding: 10px, 3px, 3px;
 }
 .map {
-    display: none;
+    
 }
 
 .footer {

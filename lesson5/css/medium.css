@@ -18,16 +18,23 @@
     }
 
     .weekdays {
+        display: flex;
+        justify-content: center;
+    }
+
+    .weekdays div{
+        display: flex;
+        margin: 10px;
         font: segoe;
-        text-align: center;
-        font-size: 35px;
-        border-radius: 5px;
-        border-color: black;
-        width: 80%;
-        height: 200px;
-        background-color: #75b4e3;
-        margin: 20px auto;
-        padding: 10px, 3px, 3px;
+        width: 150px;
+        height: 115px;
+        text-size-adjust: 10px;
+        border: solid #333;
+        justify-content: center;
+    }
+    .sun {
+        max-width: 55px;
+        padding-top: 20px;
     }
 
     .map {
