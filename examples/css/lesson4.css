@@ -56,7 +56,6 @@
 .menu li:first-child {
     display: block;
 }
-
 .menu a {
     color: yellow;
     text-decoration: none;
@@ -68,10 +67,10 @@
         justify-content: space-between;
         padding: 0;
     }
-
     .menu {
         color: yellow;
         text-decoration: none;
+
     }
 }
 

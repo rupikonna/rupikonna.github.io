@@ -1,0 +1,133 @@
+/* Define colors */
+:root {
+    --primary-color: #123456;
+    --alternate-color-1: #8AA39B;/*#447895;*/
+    --alternate-color-2: #95d9c3;
+    --text-color: #051134;
+    --background-color: #f0ffff;
+ }
+ 
+ /* Define fonts */
+ :root {
+    --h1-font: 'Bungee Inline', cursive;
+    --h2-font: 'Fredoka One', cursive;
+    --p-font: 'Roboto', sans-serif;
+ }
+ 
+ * {
+    box-sizing: border-box;
+ }
+ 
+ body {
+    background-color: var(--background-color);
+ }
+ 
+ /* Fonts */
+ body {
+    font-family: var(--p-font);
+    color: var(--text-color);
+ }
+ 
+ header h1 {
+    font-family: var(--h1-font);
+    font-size: 2em;
+    color: var(--primary-color);
+ }
+ 
+ h2 {
+    font-family: var(--h2-font);
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--alternate-color-1);
+    text-shadow: 1px 1px var(--primary-color)
+ }
+ 
+ /* Layout */
+ header {
+    display: flex;
+    margin: 0;
+    background-color: var(--alternate-color-2);
+ }
+ 
+ header h1 {
+    margin-bottom: 0;
+ }
+ 
+ .logo {
+    width: 100px;
+    height: auto;
+ }
+ 
+ .site-title {
+    flex: 1 1 100%;
+    padding-left: 1em;
+ }
+ 
+ main {
+    background-color: white;
+    padding: 1em;
+ }
+ main h2 {
+    text-align: center;
+ }
+ 
+ section {
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    height: 200px;
+    margin: 1em;
+    padding: 1em;
+ }
+ 
+ footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+ }
+ 
+ 
+ 
+ 
+ 
+ /* Responsive Hamburger Menu */
+ nav {
+    background-color: var(--primary-color);
+    margin: 0 auto;
+ }
+ 
+ .navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .navigation li:first-child {
+    display: block;
+ }
+ 
+ .navigation li {
+    display: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+ }
+ 
+ .navigation a {
+    display: block;
+    padding: 0.8em;
+    text-decoration: none;
+    color: var(--background-color);
+ }
+ 
+ .responsive li {
+    display: block;
+ }
+ 
+ .navigation li.active a {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--background-color);
+ }
+ 
+ .navigation li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+ }

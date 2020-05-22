@@ -1,0 +1,36 @@
+/*----- Medium Screen Size -----*/
+@media screen and (min-width: 600px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .weekdays {
+        font: segoe;
+        text-align: center;
+        font-size: 35px;
+        border-radius: 5px;
+        border-color: black;
+        width: 80%;
+        height: 200px;
+        background-color: #75b4e3;
+        margin: 20px auto;
+        padding: 10px, 3px, 3px;
+    }
+
+    .map {
+        float: left;
+        height: 250px;
+        width: auto;
