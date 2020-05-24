@@ -38,8 +38,12 @@
     }
 
     .map {
+        display: flex;
         float: left;
         height: 250px;
         width: auto;
+    }
+    .help {
+        display: flex;
     }
 }
