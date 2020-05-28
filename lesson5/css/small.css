@@ -59,6 +59,9 @@ h2 {
     color: white;
     background-color: #75b4e3;
 }
+.active {
+    background-color: #75b4e3;
+}
 
 .responsive li {
     display: block;
@@ -74,17 +77,17 @@ header {
 }
 
 h1 {
-    font: tohoma;
+    font: tahoma;
     font-size: 30px;
 }
 
 h2 {
-    font: tohoma;
+    font: tahoma;
     font-size: 25px;
 }
 
 h3 {
-    font: tohoma;
+    font: tahoma;
     font-size: 20px;
     text-align: center;
 }
@@ -102,7 +105,7 @@ h3 {
     height: 250px;
     background-color: white;
     margin: 60px auto;
-    padding: 10px, 3px, 3px;
+    padding: 10px 3px 3px;
 }
 
 .lake {
@@ -126,11 +129,13 @@ h3 {
     box-shadow: 0 0 30px #777;
     border-radius: 5px;
 }
+
 .current {
     height: 8px;
     width: auto;
 
 }
+
 .article {
     font: segoe;
     border-radius: 5px;
@@ -164,6 +169,7 @@ h3 {
     margin: 20px auto;
     padding: 10px, 3px, 3px;
 }
+
 .map {
     display: none;
 }
@@ -194,6 +200,37 @@ h3 {
 .dateSaved {
     color: #ffff00;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-pinterest {
+    background: red;
+    color: white;
+}
+
+
+
 
 /*----- Clearfix: Force an Element no to collapse -----*/
 .clearfix:after {

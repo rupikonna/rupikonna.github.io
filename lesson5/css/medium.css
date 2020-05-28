@@ -22,7 +22,7 @@
         justify-content: center;
     }
 
-    .weekdays div{
+    .weekdays div {
         display: flex;
         margin: 10px;
         font: segoe;
@@ -31,10 +31,16 @@
         text-size-adjust: 10px;
         border: solid #333;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
+
+    .weekdays p {
+        margin: 0;
+    }
+
     .sun {
         max-width: 55px;
-        padding-top: 20px;
     }
 
     .map {
@@ -43,7 +49,9 @@
         height: 250px;
         width: auto;
     }
+
     .help {
         display: flex;
+        flex-direction: column;
     }
 }
