@@ -25,10 +25,10 @@
     .weekdays div {
         display: flex;
         margin: 10px;
-        font: segoe;
+        font-family: segoe;
         width: 150px;
         height: 115px;
-        text-size-adjust: 10px;
+        text-size-adjust: 10;
         border: solid #333;
         justify-content: center;
         flex-direction: column;

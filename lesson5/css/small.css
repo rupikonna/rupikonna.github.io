@@ -77,17 +77,17 @@ header {
 }
 
 h1 {
-    font: tahoma;
+    font-family: tahoma;
     font-size: 30px;
 }
 
 h2 {
-    font: tahoma;
+    font-family: tahoma;
     font-size: 25px;
 }
 
 h3 {
-    font: tahoma;
+    font-family: tahoma;
     font-size: 20px;
     text-align: center;
 }
@@ -110,7 +110,7 @@ h3 {
 
 .lake {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
     position: left;
     padding: 0;
     box-shadow: 0 0 30px;
@@ -119,7 +119,7 @@ h3 {
 
 .floatingbox {
     background-color: rgba(117, 180, 227, 0.6);
-    font: segoe;
+    font-family: segoe;
     text-align: center;
     position: absolute;
     top: 5px;
@@ -133,20 +133,18 @@ h3 {
 .current {
     height: 8px;
     width: auto;
-
 }
 
 .article {
-    font: segoe;
+    font-family: segoe;
     border-radius: 5px;
     border-color: black;
     width: 80%;
     min-height: 200px;
-    max-height: auto;
+    height: auto;
     background-color: #75b4e3;
     margin: 20px auto;
-    padding: 10px, 3px, 3px;
-
+    padding: 10px 3px 3px;
 }
 
 .manimage {
@@ -158,7 +156,7 @@ h3 {
 }
 
 .block4 {
-    font: segoe;
+    font-family: segoe;
     text-align: center;
     font-size: 15px;
     border-radius: 5px;
@@ -167,7 +165,7 @@ h3 {
     height: 200px;
     background-color: #75b4e3;
     margin: 20px auto;
-    padding: 10px, 3px, 3px;
+    padding: 10px 3px 3px;
 }
 
 .map {
