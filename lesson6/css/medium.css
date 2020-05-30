@@ -1,0 +1,57 @@
+/*----- Medium Screen Size -----*/
+@media screen and (min-width: 600px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .weekdays {
+        display: flex;
+        justify-content: center;
+    }
+
+    .weekdays div {
+        display: flex;
+        margin: 10px;
+        font-family: segoe;
+        width: 150px;
+        height: 115px;
+        text-size-adjust: 10;
+        border: solid #333;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weekdays p {
+        margin: 0;
+    }
+
+    .sun {
+        max-width: 55px;
+    }
+
+    .map {
+        display: flex;
+        float: left;
+        height: 250px;
+        width: auto;
+    }
+
+    .help {
+        display: flex;
+        flex-direction: column;
+    }
+}
