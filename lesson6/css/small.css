@@ -108,17 +108,9 @@ h3 {
     padding: 10px 3px 3px;
 }
 
-.parent lake {
-    max-width: 100%;
-    position: left;
-    padding: 0;
-    box-shadow: 0 0 30px;
-    border-radius: 5px;
-}
-
 .lake {
     max-width: 100%;
-    position: left;
+    position: center;
     padding: 0;
     box-shadow: 0 0 30px;
     border-radius: 5px;
