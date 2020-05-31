@@ -108,7 +108,8 @@ h3 {
     margin: 60px auto;
     padding: 10px 3px 3px;
 }
-.parent div:first-child{
+
+.parent div:first-child {
     position: relative;
 }
 
