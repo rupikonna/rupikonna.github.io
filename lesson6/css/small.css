@@ -59,6 +59,7 @@ h2 {
     color: white;
     background-color: #75b4e3;
 }
+
 .active {
     background-color: #75b4e3;
 }
@@ -107,13 +108,17 @@ h3 {
     margin: 60px auto;
     padding: 10px 3px 3px;
 }
+.parent div:first-child{
+    position: relative;
+}
 
-.lake {
-    max-width: 100%;
+.lake img {
+    width: 100%;
+    height: auto;
     position: center;
-    padding: 0;
     box-shadow: 0 0 30px;
     border-radius: 5px;
+    margin-bottom: 30px;
 }
 
 .floatingbox {
