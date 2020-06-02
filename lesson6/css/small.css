@@ -13,10 +13,6 @@ main {
     margin: 0 auto;
 }
 
-h2 {
-    text-align: center;
-}
-
 .weathersummary {
     position: absolute;
     top: 50px;
@@ -83,6 +79,7 @@ h1 {
 }
 
 h2 {
+    text-align: center;
     font-family: tahoma;
     font-size: 25px;
 }
@@ -135,6 +132,12 @@ h3 {
     border-radius: 5px;
 }
 
+/*.grid1 {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 10px 10px 10px 10px 10px;
+    grid-gap: 20px;
+}*/
 .current {
     height: 8px;
     width: auto;
