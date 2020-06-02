@@ -100,7 +100,7 @@ h3 {
 .parent {
     position: relative;
     width: 80%;
-   
+
     background-color: white;
     margin: 60px auto;
     padding: 10px 3px 3px;
@@ -113,7 +113,6 @@ h3 {
 .lake img {
     width: 100%;
     height: auto;
-    position: absolute;
     box-shadow: 0 0 30px;
     border-radius: 5px;
     margin-bottom: 30px;
@@ -132,12 +131,6 @@ h3 {
     border-radius: 5px;
 }
 
-/*.grid1 {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 10px 10px 10px 10px 10px;
-    grid-gap: 20px;
-}*/
 .current {
     height: 8px;
     width: auto;
