@@ -12,7 +12,5 @@
     .grid-view {
         display: grid;
         grid-template-columns: repeat(3, 400px);
-        justify-content: space-evenly;
-        justify-self: center;
     }
 }

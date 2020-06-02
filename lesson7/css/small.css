@@ -87,7 +87,7 @@ h3 {
     height: auto;
 }
 
-.gallery{
+.gallery {
     font-size: 200%;
     color: green;
     font-family: tahoma;
@@ -95,9 +95,14 @@ h3 {
 
 .grid-view {
     display: grid;
-    grid-template-columns: 400px;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
-    justify-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.img1 {
+    width: 100%;
 }
 
 .footer {
