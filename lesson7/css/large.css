@@ -9,6 +9,9 @@
         border: solid 1px black;
     }
 
+    .caption {
+        display: flex;
+    }
     .grid-view {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
