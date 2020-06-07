@@ -15,6 +15,14 @@ img {
     min-height: 50px;
 }
 
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+  
 .img1 {
     grid-area: a;
     align-self: center;

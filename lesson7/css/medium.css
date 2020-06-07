@@ -1,5 +1,5 @@
 /*----- Medium Screen Size -----*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 735px) {
     .menu {
         display: flex;
     }
@@ -19,6 +19,6 @@
 
     .grid-view {
         display: grid;
-        grid-template-columns: 400px 400px;
+        grid-template-columns: 1fr 1fr;
     }
 }
