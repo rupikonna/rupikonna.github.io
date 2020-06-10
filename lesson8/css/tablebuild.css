@@ -1,4 +1,4 @@
-body{
+body {
     justify-self: center;
 }
 
@@ -7,6 +7,7 @@ table {
     height: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
     border-collapse: collapse;
     border-color: 1px solid black;
     text-align: center;
@@ -19,11 +20,6 @@ thead {
     background-color: #7fb9c2;
 }
 
-tfoot {
-    border: 1px solid black;
-    background-color: #7fb9c2;
-}
-
 .active {
     background-color: #628ca6;
     color: white;
@@ -33,7 +29,7 @@ tr {
     border: 1px solid black;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color: #e7ffed;
 }
 
@@ -44,4 +40,5 @@ td {
 tfoot {
     background-color: #7fb9c2;
     text-align: center;
+    border: 1px solid black;
 }
