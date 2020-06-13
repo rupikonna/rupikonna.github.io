@@ -90,7 +90,7 @@ h3 {
 
 /*--- Main ---*/
 form fieldset {
-    margin: 2rem o;
+    margin: 2rem 0;
     border: 1px dotted #31255a;
     border-radius: 5px;
     padding: .5rem 2%;
