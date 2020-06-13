@@ -6,6 +6,7 @@ function preloadImage(img) {
         return;
     }
     img.src = src;
+    img.removeAttribure('data-src');
 }
 
 const imgObtions = {

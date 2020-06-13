@@ -1,0 +1,19 @@
+/*----- Medium Screen Size -----*/
+@media screen and (min-width: 735px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+}

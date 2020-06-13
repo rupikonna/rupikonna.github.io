@@ -1,5 +1,6 @@
 body {
     justify-self: center;
+    font-family: Ubuntu, sans-serif;
 }
 
 table {
@@ -9,7 +10,7 @@ table {
     margin-right: auto;
     margin-top: 30px;
     border-collapse: collapse;
-    border-color: 1px solid black;
+    border-color: 1px solid #bbb;
     text-align: center;
     font-family: Ubuntu, sans-serif;
     box-shadow: 5px 5px 5px #7fb9c2;
@@ -26,7 +27,7 @@ thead {
 }
 
 tr {
-    border: 1px solid black;
+    border: 1px solid #bbb;
 }
 
 tr:nth-child(even) {
@@ -34,11 +35,11 @@ tr:nth-child(even) {
 }
 
 td {
-    border: 1px solid black;
+    border: 1px solid #bbb;
 }
 
 tfoot {
     background-color: #7fb9c2;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #bbb;
 }

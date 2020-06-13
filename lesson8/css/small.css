@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+/*--- Menu ---*/
+.menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.menu li:first-child {
+    display: block;
+}
+
+.menu li {
+    display: none;
+}
+
+.menu a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: #75b4e3;
+}
+
+.active {
+    background-color: #75b4e3;
+}
+
+.responsive li {
+    display: block;
+}
+
+header {
+    border: #31255a solid 1px;
+    background: #31255a;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: tahoma;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: tahoma;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: tahoma;
+    font-size: 20px;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    width: 120px;
+    height: auto;
+}
+
+/*--- Main ---*/
+form fieldset {
+    margin: 2rem o;
+    border: 1px dotted #31255a;
+    border-radius: 5px;
+    padding: .5rem 2%;
+    max-width: 25rem;
+}
+
+form legend {
+    color: #31255a;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+}
+
+form label.top,
+input,
+form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #9999;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 25rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+form input.submitButton {
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 5px 0 10rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required{
+    border-left: red solid 5px;
+}
+
+form label.top input:required:valid{
+    border-left: green solid 5px;
+}
+
+.tickmarks{
+    max-width: 10rem;
+}
+/*--- Footer ---*/
+.footer {
+    margin-top: -100px;
+    height: 50px;
+    background: #31255a;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1em;
+    padding: .5em;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+.byuilink {
+    color: white;
+}
+
+.dateSaved {
+    color: #ffff00;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-pinterest {
+    background: red;
+    color: white;
+}
+
+/*----- Clearfix: Force an Element no to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Weather</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <meta name="description" content="Weather Web Site Plan">
+    <!-- Fix the CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="clearfix">
+        <img class="logo" src="images/logo.jpg" alt="sun and clouds">
+        <h1>The Weather Site</h1>
+        <h2>Catch Some Sun</h2>
+    </header>
+    <nav>
+        <ul class="menu navigation">
+            <li><a href="" id='menu-button'>&#9776; Site Menu</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Reporting Individual</legend>
+                    <label class="top">First Name<input type="text" name="fname" required></label>
+                    <label class="top">Last Name<input type="text" name="lname" required></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="john@anymail.com"></label>
+                    <label class="top">Phone<input type="tel" name="phone" placeholder="1234567890" required></label>
+                    <label class="top">Zip Code<input type="number" name="zip" placeholder="12345" required</label>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Report</legend>
+                    <label class="top">Storm Date<input type="date" name="date"></label>
+                    <label class="top">Storm Type<input list="stormType" name="stormType">
+                        <datalist id="stormType">
+                            <option value="Flash Flood">Flash Flood</option>
+                            <option value="Hail">Hail</option>
+                            <option value="Hurricane">Hurricane</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                            <option value="Tornado">Tornado</option>
+                        </datalist>
+                    </label>
+                    <label class="top">Storm Severity<input type="range" value="10" min="1" max="10" step="1"
+                            list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span>
+                    </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                    <label class="top">Storm Region
+                        <select name="region">
+                            <option value disabled selected>Select Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>User In-Danger</legend>
+                    <label><input type="radio" name="danger" value="Yes">Yes</label>
+                    <label><input type="radio" name="danger" value="No">No</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <label class="top"><input type="textarea" name="comments"></label>
+                </fieldset>
+                <input class="submitButton" type="submit" value="Report The Storm">
+            </form>
+        </div>
+        <script src="js/stomcenter.js"></script>
+    </main>
+</body>
+<footer class="footer">
+    &copy; <span id="year"></span> | Kenneth V. Johnson | Idaho | <a href="https://www.byui.edu"
+        class="byuilink">BYU-Idaho</a><br />
+    <span class="dateSaved" id="lastModified">Last Modified:</span>
+</footer>
+<script src="js/index.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: [
+                "Serif", "Sans-serif"
+            ]
+        }
+    });
+</script>
+
+</html>
