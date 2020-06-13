@@ -143,8 +143,12 @@ form label.top input:required:valid{
 .tickmarks{
     max-width: 10rem;
 }
+
+form textarea {
+    min-width: 20rem;
+}
 /*--- Footer ---*/
-.footer {
+.theEnd {
     margin-top: -100px;
     height: 50px;
     background: #31255a;
