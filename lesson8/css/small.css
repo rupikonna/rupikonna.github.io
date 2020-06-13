@@ -89,7 +89,7 @@ h3 {
 }
 
 /*--- Main ---*/
-form fieldset {
+fieldset {
     margin: 2rem 0;
     border: 1px dotted #31255a;
     border-radius: 5px;
@@ -97,21 +97,19 @@ form fieldset {
     max-width: 25rem;
 }
 
-form legend {
+legend {
     color: #31255a;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
 
-form label.top{
+.top {
     display: block;
     padding-top: 1rem;
     color: #9c2c13;
 }
 
-form label.top,
-input,
-form label.top select {
+.top, input {
     display: block;
     font-size: 1rem;
     border: solid 1px #9999;
@@ -123,7 +121,19 @@ form label.top select {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-form input.submitButton {
+.top input:required {
+    border-left: red solid 5px;
+}
+
+.top input:required:valid {
+    border-left: green solid 5px;
+}
+
+textarea {
+    min-width: 20rem;
+}
+
+input.submitButton {
     border: none;
     background-color: black;
     color: white;
@@ -132,21 +142,6 @@ form input.submitButton {
     max-width: 20rem;
 }
 
-form label.top input:required{
-    border-left: red solid 5px;
-}
-
-form label.top input:required:valid{
-    border-left: green solid 5px;
-}
-
-.tickmarks{
-    max-width: 10rem;
-}
-
-form textarea {
-    min-width: 20rem;
-}
 /*--- Footer ---*/
 .theEnd {
     margin-top: -100px;
