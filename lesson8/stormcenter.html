@@ -38,7 +38,7 @@
             <form method="get" action="thanks.html">
                 <fieldset>
                     <legend>Reporting Individual</legend>
-                    <label class="top">First Name<input type="text" name="fname" required></label>
+                    <label class="top">First Name<input type="text" pattern="\w{5,}" name="fname" required></label>
                     <label class="top">Last Name<input type="text" name="lname" required></label>
                     <label class="top">Email<input type="email" name="email" placeholder="john@anymail.com"></label>
                     <label class="top">Phone<input type="tel" name="phone" placeholder="1234567890" required></label>
@@ -84,12 +84,13 @@
                     </label>
                 </fieldset>
                 <fieldset>
-                    <legend>User In-Danger</legend>
+                    <legend class="sbs">User In-Danger</legend>
                     <label><input type="radio" name="danger" value="Yes">Yes</label>
                     <label><input type="radio" name="danger" value="No">No</label>
                 </fieldset>
                 <fieldset>
                     <legend>Additional Comments</legend>
+                    <label>Leave Us Some Notes</label>
                     <label class="top"><textarea name="comments"></textarea></label>
                 </fieldset>
                 <input class="submitButton" type="submit" value="Report The Storm">
@@ -97,7 +98,7 @@
         </div>
         <script src="js/stomcenter.js"></script>
     </main>
-</body>
+
 <footer id="theEnd">
     &copy; <span id="year"></span> | Kenneth V. Johnson | Idaho | <a href="https://www.byui.edu"
         class="byuilink">BYU-Idaho</a><br />
@@ -114,5 +115,5 @@
         }
     });
 </script>
-
+</body>
 </html>
