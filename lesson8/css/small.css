@@ -110,7 +110,6 @@ legend {
 }
 
 .top, input {
-    display: block;
     font-size: 1rem;
     border: solid 1px #9999;
     border-radius: 5px;
@@ -131,6 +130,10 @@ legend {
 
 textarea {
     min-width: 20rem;
+}
+
+.sbs{
+    display: block;
 }
 
 input.submitButton {
