@@ -1,4 +1,4 @@
-const url = "https://byui-cit230.github.io/canvas-referenced/latter-day-prophets.json";
+const url = "https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json";
 const resultsElement = document.getElementById('results');
 fetch(url)
     .then(response => response.json())

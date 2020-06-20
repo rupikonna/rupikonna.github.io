@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 90vw;
+    margin: 0 0 20px 0;
+}
+
+#main {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+/*--- Menu ---*/
+.menu {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+.menu li:first-child {
+    display: block;
+}
+
+.menu li {
+    display: none;
+}
+
+.menu a {
+    display: block;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: #75b4e3;
+}
+
+.active {
+    background-color: #75b4e3;
+}
+
+.responsive li {
+    display: block;
+}
+
+header {
+    border: #31255a solid 1px;
+    background: #31255a;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: tahoma;
+    font-size: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-family: tahoma;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: tahoma;
+    font-size: 15px;
+    text-align: center;
+}
+
+div {
+    margin: 30px;
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    width: 120px;
+    height: auto;
+}
+
+section {
+    text-align: center;
+    background-color: #eee;
+    margin: .5rem auto;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+img {
+    max-width: 80%;
+}
+
+
+/*--- Footer ---*/
+#theEnd {
+    margin-top: -100px;
+    height: 50px;
+    background: #31255a;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1em;
+    padding: .5em;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+.byuilink {
+    color: white;
+}
+
+.dateSaved {
+    color: #ffff00;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-pinterest {
+    background: red;
+    color: white;
+}
+
+/*----- Clearfix: Force an Element no to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
