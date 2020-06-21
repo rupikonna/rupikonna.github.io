@@ -3,8 +3,9 @@
     .menu li a {
         padding: .6rem 1rem;
     }
+
     div {
-        display: grid;
-        grid-column: 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: row;
     }
 }
