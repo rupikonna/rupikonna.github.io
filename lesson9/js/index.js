@@ -8,8 +8,8 @@ fetch(url)
         let towns = data.towns;
 
         for (town of towns) {
-            if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs"){
-            h += `<section>
+            if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs") {
+                h += `<section>
                  <h2>${town.name}</h2>
                  <h3>${town.motto}</h3>
                  <p class="article">Year Founded: ${town.yearFounded}</p>
@@ -17,9 +17,8 @@ fetch(url)
                  <p class="article">Annual Rain Fall: ${town.averageRainfall}</p>
                  <img src="/lesson9/images/${town.photo}" alt="${town.name}">
                 </section>`;
-        }}
-
+            }
+        }
         h += `</div>`;
-
         resultsElement.innerHTML = h;
     });
