@@ -10,7 +10,7 @@ let apiURL = 'http://api.openweathermap.org/data/2.5/' +
 
 console.log(apiURL);
 
-apiURL = 'weather-request.json'
+//apiURL = 'weather-request.json'
 
 fetch(apiURL)
     .then(response => response.json())
