@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Weather</title>
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <meta name="description" content="Weather Web Site Plan">
+    <!-- Fix the CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="clearfix">
+        <img class="logo" src="images/logo.jpg" alt="sun and clouds">
+        <h1>The Weather Site</h1>
+        <h2>Catch Some Sun</h2>
+    </header>
+    <nav>
+        <ul class="menu navigation">
+            <li><a href="" id='menu-button'>&#9776; Site Menu</a></li>
+            <li><a href="/lesson9/index.html">Home</a></li>
+            <li><a class="active" href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="lesson7/gallery-7.html">Gallery</a>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="parent">
+            <div>
+                <picture class="lake">
+                    <source media="(max-width: 599px)" srcset="images/franklin265.webp">
+                    <source media="(max-width: 1000px)" srcset="images/franklin600.webp">
+                    <img src="images/franklin960.webp" alt="Franklin County Idaho">
+                </picture>
+                <section class="floatingbox">
+                    <h3>Weather Summary</h3>
+                    <div class="grid1">
+                        <p class="current" id="current"></p>
+                        <p class="current" id="current-temp"></p>
+                        <p class="current" id="windchill">Wind Chill: <span id="windchill"></span><span>&#8457;</span></p>
+                        <p class="current" id="humidity"></p>
+                        <p class="current" id="wind"></p>
+                        <!---<script src="js/windchill.js"></script>--->
+                    </div>
+                </section>
+            </div>
+            <section class="help">
+                <h2>5 Day Forcast</h2>
+                <div class="weekdays">
+                    <div>Mon
+                        <p><img id='imagesrc' src="images/sun.jpg" alt="sun image"></p>
+                        <p>76 °F</p>
+                    </div>
+                    <div>Tue<p><img class='sun' src="images/sun.jpg" alt="sun image"></p>
+                        <p>76 °F</p>
+                    </div>
+                    <div>Wed<p><img class='sun' src="images/sun.jpg" alt="sun image"></p>
+                        <p>76 °F</p>
+                    </div>
+                    <div>Thu<p><img class='sun' src="images/sun.jpg" alt="sun image"></p>
+                        <p>76 °F</p>
+                    </div>
+                    <div>Fri<p><img class='sun' src="images/sun.jpg" alt="sun image"></p>
+                        <p>76 °F</p>
+                    </div>
+
+                </div>
+            </section>
+            <div class="article clearfix">
+                <img class=manimage src="images/man.webp" alt="not staying">
+                <h3>Article</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit vel consequuntur, repellat
+                    possimus
+                    natus voluptatum facilis iusto dicta laboriosam, odio pariatur ullam voluptatem similique excepturi
+                    quod
+                    delectus maiores quasi?</p>
+
+            </div>
+            <div class="block4 clearfix">
+                <img class="map" src="images/prestonmap.webp" alt="map of preston area">
+                <p>Contact Information<br />
+                    The Weather Site<br />
+                    30 N 1st E<br />
+                    Preston, ID 83263<br />
+                    <br /></p>
+                <!-- Add font awesome icons -->
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-twitter"></a>
+                <a href="" class="fa fa-pinterest"></a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        &copy; <span id="year"></span> | Kenneth V. Johnson | Idaho | <a href="https://www.byui.edu"
+            class="byuilink">BYU-Idaho</a><br />
+        <span class="dateSaved" id="lastModified">Last Modified:</span>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
