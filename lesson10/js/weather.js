@@ -2,7 +2,7 @@ const apikey = 'c8b700625dde09d16975a2c5f43cd561';
 const cityID = '5604473';
 const method = 'weather';
 const units = 'imperial';
-let apiURL = 'http://api.openweathermap.org/data/2.5/' +
+let apiURL = 'https://api.openweathermap.org/data/2.5/' +
     method +
     '?id=' + cityID +
     '&APPID=' + apikey +
