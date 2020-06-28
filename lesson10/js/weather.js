@@ -52,32 +52,8 @@ fetch(apiURL1)
     .then(data => {
         console.log(data);
 
-        let list = data.list;
-        i = 0;
-        days = document.getElementsByClassName('day');
-        temp_show = document.getElementsByClassName('temp');
-        image = document.getElementsByClassName('imagesrc');
-        for (item of list) {
-            if (item.dt_txt.includes("18:00:00")) {
-                temp = Math.round(item.main.temp);
-                temp_show[i].innerText = temp;
-
-                dt = item.dt;
-                date = new Date(dt * 1000);
-                days[i].innerText = dayOfWeek[date.getDay()];
-
-                imagesrc = 'https://openweathermap.org/img/w/' + item.weather[0].icon + '.png';
-
-                desc = item.weather[0].descripction;
-
-                image[i].innerText = imagesrc;
-                image[i].setAttribute('src', imagesrc);
-                image[i].setAttribute('alt', desc);
-           
-                i++;
-            }
-        }
-        /*let days = document.getElementsByClassName('forecast.day');
+       
+        let days = document.getElementsByClassName('forecast.day');
                 let i = 0;
                 let list = data.list;
                 for (item of list) {
@@ -88,11 +64,11 @@ fetch(apiURL1)
                         console.log(list);
                     }
 
-                }*/
+                }
 
     });
 
-/*const dt = item.dt;
+const dt = item.dt;
 let date = new Date(dt * 1000);
 console.log(date);
 document.getElementById('dayOfWeek').innerText = dayOfWeek[date.getDay()];
@@ -104,4 +80,4 @@ const imagesrc = 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.
         document.getElementById('imagesrc').innerText = imagesrc;
         document.getElementById('icon').setAttribute('src', imagesrc);
         document.getElementById('icon').setAttribute('alt', desc);
-        document.getElementById('desc').innerText = desc;*/
+        document.getElementById('desc').innerText = desc;
