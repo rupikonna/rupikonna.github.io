@@ -9,16 +9,20 @@ fetch(url)
 
         for (town of towns) {
             if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs") {
-                h += `<section>
+                h += `<section class="card">
+                <div class="card-text">
                  <h2>${town.name}</h2>
                  <h3>${town.motto}</h3>
                  <p class="article">Year Founded: ${town.yearFounded}</p>
                  <p class="article">Population: ${town.currentPopulation}</p>
                  <p class="article">Annual Rain Fall: ${town.averageRainfall}</p>
+                 </div>
                  <img src="/lesson9/images/${town.photo}" alt="${town.name}">
                 </section>`;
             }
         }
+
         h += `</div>`;
+
         resultsElement.innerHTML = h;
     });

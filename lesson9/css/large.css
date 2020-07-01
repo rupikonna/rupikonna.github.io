@@ -4,8 +4,19 @@
         padding: .6rem 1rem;
     }
 
-    div {
+    div#results {
         display: flex;
         flex-direction: row;
     }
+
+    card.img {
+        width: 80%;
+        height: auto;
+    }
+
+    section.card:nth-child(odd){
+        flex-direction: row;
+    }
+    
+  
 }
