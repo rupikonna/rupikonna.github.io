@@ -3,12 +3,12 @@ const cityID = '5604473';
 const method = 'weather';
 const units = 'imperial';
 const forecast = 'forecast';
-let apiURL = 'https://api.openweathermap.org/data/2.5/' +
+let apiURL = '//api.openweathermap.org/data/2.5/' +
     method +
     '?id=' + cityID +
     '&APPID=' + apikey +
     '&units=' + units;
-let apiURL1 = 'http://api.openweathermap.org/data/2.5/' +
+let apiURL1 = '//api.openweathermap.org/data/2.5/' +
     forecast +
     '?id=' + cityID +
     '&APPID=' + apikey +

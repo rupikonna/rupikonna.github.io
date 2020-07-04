@@ -3,12 +3,12 @@ const cityID = '5604473';
 const method = 'weather';
 const units = 'imperial';
 const forecast = 'forecast';
-let apiURL = 'https://api.openweathermap.org/data/2.5/' +
+let apiURL = '//api.openweathermap.org/data/2.5/' +
     method +
     '?id=' + cityID +
     '&APPID=' + apikey +
     '&units=' + units;
-let apiURL1 = 'http://api.openweathermap.org/data/2.5/' +
+let apiURL1 = '//api.openweathermap.org/data/2.5/' +
     forecast +
     '?id=' + cityID +
     '&APPID=' + apikey +
@@ -52,32 +52,30 @@ fetch(apiURL1)
     .then(data => {
         console.log(data);
 
-       
-        let days = document.getElementsByClassName('forecast.day');
-                let i = 0;
-                let list = data.list;
-                for (item of list) {
-                    if (item.dt_txt.includes("18:00:00")) {
-                        temp = item.main.temp;
-                        days[i].innerText = temp;
-                        i++;
-                        console.log(list);
-                    }
 
-                }
+        let days_temp = document.getElementsByClassName('temp');
+        let images = document.getElementsByClassName('imagesrc');
+        let dayNames = document.getElementsByClassName('dayName');
+        let i = 0;
+        let list = data.list;
+        for (item of list) {
+            if (item.dt_txt.includes("18:00:00")) {
+                temp = item.main.temp;
+                days_temp[i].innerText = temp + " \xB0" + "F";
+               
+                
+                const dt = item.dt;
+                let date = new Date(dt * 1000);
+                console.log(date);
+                dayNames[i].innerText = dayOfWeek[date.getDay()];
+                console.log(list);
+                const desc = item.weather[0].description;
+                const imagesrc = 'https://openweathermap.org/img/w/' + item.weather[0].icon + '.png';
+                images[i].setAttribute('src', imagesrc);
+                images[i].setAttribute('alt', desc);
+                i++;
+            }
 
+        }
+        
     });
-
-const dt = item.dt;
-let date = new Date(dt * 1000);
-console.log(date);
-document.getElementById('dayOfWeek').innerText = dayOfWeek[date.getDay()];
-
-
-
-const imagesrc = 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
-        const desc = data.weather[0].description;
-        document.getElementById('imagesrc').innerText = imagesrc-i;
-        document.getElementById('icon').setAttribute('src', icon);
-        document.getElementById('icon').setAttribute('alt', desc);
-        document.getElementById('desc').innerText = desc;
