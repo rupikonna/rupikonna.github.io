@@ -34,7 +34,7 @@
         </ul>
     </nav>
     <main>
-        <h2>Preston Idaho</h2>
+        <h2 id="city">Preston Idaho</h2>
         <div class="parent">
             <div>
                 <picture class="lake">
@@ -51,6 +51,11 @@
                         <p class="current" id="humidity"></p>
                         <p class="current" id="wind"></p>
                     </div>
+                </section>
+            </div>
+            <div id="fun">
+                <h2>Upcoming Events</h2>
+                <section id="events">
                 </section>
             </div>
             <section class="help">
@@ -96,7 +101,7 @@
             </div>
             <div class="block4 clearfix">
                 <img class="map" src="images/prestonmap.webp" alt="map of preston area">
-                <p>Contact Information<br />
+                <p class="font">Contact Information<br />
                     The Weather Site<br />
                     30 N 1st E<br />
                     Preston, ID 83263<br />
@@ -115,6 +120,16 @@
     </footer>
     <script src="js/index.js"></script>
     <script src="js/weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></scri
+            < script >
+            WebFont.load({
+                google: {
+                    families: [
+                        "Serif", "Sans-serif"
+                    ]
+                }
+            });
+    </script>
 </body>
 
 </html>

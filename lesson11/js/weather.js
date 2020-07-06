@@ -1,5 +1,12 @@
 const apikey = 'c8b700625dde09d16975a2c5f43cd561';
-const cityID = '5604473';
+if (cityName == "Preston Idaho") {
+    cityID = "5604473"; /*Preston*/
+} else if (cityName == "Fish Haven Idaho") {
+    cityID = "5605242"; /*Rexburg in lue of Fish Haven*/
+} else {
+    cityID = "5607916"; /*Soda Springs*/
+};
+console.log(cityID);
 const method = 'weather';
 const units = 'imperial';
 const forecast = 'forecast';
@@ -13,10 +20,7 @@ let apiURL1 = '//api.openweathermap.org/data/2.5/' +
     '?id=' + cityID +
     '&APPID=' + apikey +
     '&units=' + units;
-
 console.log(apiURL);
-console.log(apiURL1);
-
 //apiURL = 'weather-request.json'
 //apiURL1 = 'forecast.json';
 

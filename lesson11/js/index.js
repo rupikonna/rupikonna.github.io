@@ -68,3 +68,37 @@ fetch(url)
 
         resultsElement.innerHTML = h;
     });
+
+const url1 = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const townsElement = document.getElementById('events');
+console.log(events)
+let cityName = document.getElementById('city').textContent;
+let city = "";
+if (cityName == "Preston Idaho") {
+    city = "Preston";
+} else if (cityName == "Fish Haven Idaho") {
+    city = "Fish Haven";
+} else {
+    city = "Soda Springs";
+}
+
+fetch(url1)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        let towns = data.towns;
+        let j = "";
+        let events = "";
+        let i = 0;
+        for (town of towns) {
+            if (town.name == city) {
+                events = town.events;
+                i = 0;
+                for (event of events) {
+                    j += `<p class="toDo">${events[i]}</p>`;
+                    i++;
+                }
+            }
+        }
+        townsElement.innerHTML = j;
+    });

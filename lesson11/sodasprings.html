@@ -34,13 +34,13 @@
         </ul>
     </nav>
     <main>
-        <h2>Soda Springs Idaho</h2>
+        <h2 id="city">Soda Springs Idaho</h2>
         <div class="parent">
             <div>
                 <picture class="lake">
-                    <source media="(max-width: 599px)" srcset="images/franklin265.webp">
-                    <source media="(max-width: 1000px)" srcset="images/franklin600.webp">
-                    <img src="images/franklin960.webp" alt="Franklin County Idaho">
+                    <source media="(max-width: 599px)" srcset="images/photo-265.webp">
+                    <source media="(max-width: 1000px)" srcset="images/photo-600.webp">
+                    <img src="images/photo-800.webp" alt="Franklin County Idaho">
                 </picture>
                 <section class="floatingbox">
                     <h3>Weather Summary</h3>
@@ -51,6 +51,11 @@
                         <p class="current" id="humidity"></p>
                         <p class="current" id="wind"></p>
                     </div>
+                </section>
+            </div>
+            <div id="fun">
+                <h2>Upcoming Events</h2>
+                <section id="events">
                 </section>
             </div>
             <section class="help">
@@ -115,6 +120,16 @@
     </footer>
     <script src="js/index.js"></script>
     <script src="js/weather.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></scri
+        < script >
+        WebFont.load({
+            google: {
+                families: [
+                    "Serif", "Sans-serif"
+                ]
+            }
+        });
+</script>
 </body>
 
 </html>
