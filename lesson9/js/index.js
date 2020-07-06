@@ -13,9 +13,9 @@ fetch(url)
                 <div class="card-text">
                  <h2>${town.name}</h2>
                  <h3>${town.motto}</h3>
-                 <p class="article">Year Founded: ${town.yearFounded}</p>
-                 <p class="article">Population: ${town.currentPopulation}</p>
-                 <p class="article">Annual Rain Fall: ${town.averageRainfall}</p>
+                 <p class="art">Year Founded: ${town.yearFounded}</p>
+                 <p class="art">Population: ${town.currentPopulation}</p>
+                 <p class="art">Annual Rain Fall: ${town.averageRainfall}</p>
                  </div>
                  <img src="/lesson9/images/${town.photo}" alt="${town.name}">
                 </section>`;

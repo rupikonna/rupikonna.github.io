@@ -17,6 +17,11 @@
         text-align: center;
     }
 
+    .grid-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .weekdays {
         display: flex;
         justify-content: center;
@@ -82,12 +87,12 @@
         flex-direction: row-reverse;
     }
 
-    article {
+    art {
         display: flex;
         flex-direction: column;
     }
 
-    article:nth-child(odd) {
+    art:nth-child(odd) {
         flex-direction: row-reverse;
     }
 

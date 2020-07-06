@@ -91,6 +91,11 @@ h3 {
     text-align: center;
 }
 
+div {
+    margin: 30px;
+    padding: 20px;
+}
+
 .day h4{
     margin: 0;
 }
@@ -100,6 +105,101 @@ h3 {
     padding: 10px;
     width: 120px;
     height: auto;
+}
+
+section {
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.mainImg {
+    float: left;
+    padding: 10px;
+    width: 300px;
+    height: auto;
+
+}
+
+/*--- Main ---*/
+fieldset {
+    margin: 2rem 0;
+    border: 1px dotted #31255a;
+    border-radius: 5px;
+    padding: .5rem 2%;
+    max-width: 25rem;
+}
+
+legend {
+    color: #31255a;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+.top {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+}
+
+.top, input {
+    font-size: 1rem;
+    border: solid 1px #9999;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 25rem;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.top input:required {
+    border-left: red solid 5px;
+}
+
+.top input:required:valid {
+    border-left: green solid 5px;
+}
+
+textarea {
+    min-width: 20rem;
+}
+
+.sbs{
+    display: block;
+}
+
+input.submitButton {
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 5px 0 10rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+.gallery {
+    font-size: 200%;
+    color: green;
+    font-family: tahoma;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.caption {
+    display: none;
 }
 
 .parent {
@@ -130,8 +230,6 @@ h3 {
     top: 5px;
     left: 5px;
     border: 1px solid #333;
-    padding: .5rem;
-    box-shadow: 0 0 30px #777;
     border-radius: 5px;
 }
 
@@ -158,6 +256,7 @@ h3 {
     box-shadow: 0 0 30px black;
     background-color: white;
     border-radius: 5px;
+    max-width: 300px;
 }
 
 .block4 {

@@ -45,12 +45,12 @@
         flex-direction: row-reverse;
     }
 
-    article {
+    art {
         display: flex;
         flex-direction: column;
     }
 
-    article:nth-child(odd) {
+    art:nth-child(odd) {
         flex-direction: row-reverse;
     }
 

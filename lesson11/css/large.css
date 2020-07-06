@@ -4,6 +4,19 @@
         padding: .6rem 1rem;
     }
 
+    img:hover {
+        box-shadow: 5px 10px 18px #888888;
+        border: solid 1px black;
+    }
+
+    .caption {
+        display: flex;
+    }
+    .grid-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
     div#results {
         display: flex;
         flex-direction: row;
