@@ -1,0 +1,44 @@
+/*----- Medium Screen Size -----*/
+@media screen and (min-width: 660px) {
+
+    /*--- Menu ---*/
+    .menu {
+        display: flex;
+    }
+
+    .menu li:first-child {
+        display: none;
+    }
+
+    .menu li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    .map {
+        float: left;
+    }
+
+    /*--- Main ---*/
+    h1 {
+        font-size: 75px;
+    }
+
+    .temple img {
+        max-width: 90%;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

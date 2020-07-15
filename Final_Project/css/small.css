@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+header {
+    background-color: rgb(177, 193, 117);
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    color: rgb(45, 136, 45);
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.active {
+    color: rgb(177, 193, 117);
+}
+
+.logo {
+    max-width: 150px;
+    float: left;
+}
+
+/*--- Menu ---*/
+.menu {
+    max-width: 90%;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.menu li:first-child {
+    display: block;
+}
+
+.menu li {
+    display: none;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: rgb(117, 193, 117);
+}
+
+.active {
+    background-color: rgb(45, 136, 45);
+}
+
+.responsive li {
+    display: block;
+}
+
+/*--- Main ---*/
+main {
+    margin-top: 10px;
+    margin-bottom: 70px;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: rgb(209, 238, 209)
+}
+
+.address {
+    text-align: center;
+}
+
+.map {
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    float: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.maintemple {
+    width: 900px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.temple {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.temple img {
+    box-shadow: 0 0 30px;
+    border-radius: 5px;
+}
+
+.floatingbox {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: 75;
+    width: 175px;
+    background-color: rgba(209, 238, 209, .5);
+    text-align: center;
+    border-radius: 5px;
+}
+
+#hours {
+    border-radius: 5px;
+    background-color: rgba(209, 238, 209, .5);
+    border: solid 1px black;
+    max-width: 35%;
+    margin: auto;
+}
+
+#events {
+    text-align: center;
+}
+
+.alert {
+    padding: 20px;
+    background-color: rgb(45, 136, 45);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.link2 {
+    text-decoration: none;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+/*--- Form ---*/
+main .width {
+    width: 400px;
+}
+
+form {
+    background-color: rgb(117, 193, 117);
+    border-radius: 5px;
+    border: black;
+    margin: 0 auto;
+}
+
+.form {
+    max-width: 350px;
+}
+
+fieldset {
+    border-radius: 5px;
+    padding: .5rem 2%;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+.res,
+.req {
+    display: grid;
+    max-width: 300px;
+    padding-top: .5rem;
+}
+
+.button {
+    width: 350px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(45, 136, 45);
+    margin: 0 auto;
+}
+
+/*--- Footer ---*/
+footer {
+    background-color: rgb(177, 193, 117);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1em;
+    padding: .5em;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 5px;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    margin-left: 5px;
+}
+
+.fa-pinterest {
+    background: red;
+    color: white;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- Clearfix: Force an Element no to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

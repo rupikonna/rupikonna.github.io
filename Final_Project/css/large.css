@@ -1,0 +1,14 @@
+/*----- Large Screen Size -----*/
+@media screen and (min-width: 960px) {
+
+    /*--- Menu ---*/
+    .menu li a {
+        padding: .6rem 0;
+    }
+
+    /*--- Main ---*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
