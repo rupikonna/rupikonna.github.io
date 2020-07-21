@@ -17,13 +17,13 @@ for (i = 0; i < cityName.length; i++) {
     if (i == 0) {
         cityID = "5780993"; /* Salt Lake City */
     } else if (i == 1) {
-        cityID = "4744725"; /* Arlinton VA in lue of Washington DC */
+        cityID = "4744725"; /* Arlington VA in lue of Washington DC */
     } else if (i == 2) {
         cityID = "2643743"; /* London England */
     } else {
         cityID = "658226"; /* Helsinki Finland */
-    };
-    console.log (cityID);
+    }
+    console.log(cityID);
 
     const method = 'weather';
     const units = 'imperial';
@@ -44,10 +44,10 @@ for (i = 0; i < cityName.length; i++) {
     fetch(apiURL)
         .then(response => response.json())
         .then(data => {
-            document.getElementById('current-temp').innerText = "Temp: " + Math.round(data.main.temp) + "\xB0" + "F";
-            document.getElementById('current').textContent = "Current: " + data.weather[0].main;
-            document.getElementById('humidity').textContent = "Humidity: " + data.main.humidity;
-            document.getElementById('wind').textContent = "Wind Speed: " + data.wind.speed + " mph";
+            document.getElementById("current"+i).textContent = "Current: " + data.weather[0].main;
+            document.getElementById("current-temp"+i).innerText = "Temp: " + Math.round(data.main.temp) + "\xB0" + "F";
+            document.getElementById("humidity"+i).textContent = "Humidity: " + data.main.humidity;
+            document.getElementById("wind"+i).textContent = "Wind Speed: " + data.wind.speed + " mph";
 
             let temp = data.main.temp;
             let wind = data.wind.speed;

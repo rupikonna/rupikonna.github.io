@@ -66,8 +66,8 @@ fetch(apiURL1)
             if (item.dt_txt.includes("18:00:00")) {
                 temp = item.main.temp;
                 days_temp[i].innerText = temp + " \xB0" + "F";
-               
-                
+
+
                 const dt = item.dt;
                 let date = new Date(dt * 1000);
                 console.log(date);
@@ -81,5 +81,5 @@ fetch(apiURL1)
             }
 
         }
-        
+
     });

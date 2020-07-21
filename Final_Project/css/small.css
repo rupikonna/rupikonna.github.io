@@ -186,6 +186,17 @@ main {
     color: black;
 }
 
+.list {
+    width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.y-n {
+  margin-top: 5px;
+}
+
 /*--- Form ---*/
 main .width {
     width: 400px;

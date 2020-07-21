@@ -2,85 +2,75 @@
     "list": [
         {
             "name": "Salt Lake City",
-            "address": [
-                {
-                    "street": "Temple",
-                    "city": "Salt Lake City",
-                    "state": "UT",
-                    "postalCode": "84040"
-                }
-            ],
-            "main": [
-                {
-                    "Sun": "Closed",
-                    "Mon": "Closed",
-                    "Tues": "6 am - 8 pm",
-                    "Wed": "6 am - 8 pm",
-                    "Thu": "6 am - 8 pm",
-                    "Fri": "6 am - 8 pm",
-                    "Sat": "6 am - 8 pm"
-                }
-            ],
+            "address": {
+                "street": "50 N West Temple",
+                "city": "Salt Lake City",
+                "state": "UT",
+                "postalCode": "84150"
+            },
+            "main": {
+                "Sun": "Closed",
+                "Mon": "Closed",
+                "Tues": "6 am - 8 pm",
+                "Wed": "6 am - 8 pm",
+                "Thu": "6 am - 8 pm",
+                "Fri": "6 am - 8 pm",
+                "Sat": "6 am - 8 pm"
+            }
+        },
+        {
             "name": "Washington DC",
-            "address": [
-                {
-                    "street": "Temple",
-                    "city": "Salt Lake City",
-                    "state": "UT",
-                    "postalCode": "84040"
-                }
-            ],
-            "main": [
-                {
-                    "Sun": "Closed",
-                    "Mon": "Closed",
-                    "Tues": "6 am - 8 pm",
-                    "Wed": "6 am - 8 pm",
-                    "Thu": "6 am - 8 pm",
-                    "Fri": "6 am - 8 pm",
-                    "Sat": "6 am - 8 pm"
-                }
-            ],
+            "address": {
+                "street": "9900 Stoneybrook Drive",
+                "city": "Kensington",
+                "state": "MD",
+                "postalCode": "20895"
+            },
+            "main": {
+                "Sun": "Closed",
+                "Mon": "Closed",
+                "Tues": "6 am - 8 pm",
+                "Wed": "6 am - 8 pm",
+                "Thu": "6 am - 8 pm",
+                "Fri": "6 am - 8 pm",
+                "Sat": "6 am - 8 pm"
+            }
+        },
+        {
             "name": "London England",
-            "address": [
-                {
-                    "street": "Temple",
-                    "city": "Salt Lake City",
-                    "state": "UT",
-                    "postalCode": "84040"
-                }
-            ],
-            "main": [
-                {
-                    "Sun": "Closed",
-                    "Mon": "Closed",
-                    "Tues": "6 am - 8 pm",
-                    "Wed": "6 am - 8 pm",
-                    "Thu": "6 am - 8 pm",
-                    "Fri": "6 am - 8 pm",
-                    "Sat": "6 am - 8 pm"
-                }
-            ],
+            "address": {
+                "street": "West Park Road",
+                "city": "Newchapel, Lingfield",
+                "state": "",
+                "postalCode": "RH7 6HW"
+            },
+            "main": {
+                "Sun": "Closed",
+                "Mon": "Closed",
+                "Tues": "6 am - 8 pm",
+                "Wed": "6 am - 8 pm",
+                "Thu": "6 am - 8 pm",
+                "Fri": "6 am - 8 pm",
+                "Sat": "6 am - 8 pm"
+            }
+        },
+        {
             "name": "Helsinki Finland",
-            "address": [
-                {
-                    "street": "Temple",
-                    "city": "Salt Lake City",
-                    "state": "UT",
-                    "postalCode": "84040"
-                }
-            ],
-            "main": [
-                {
-                    "Sun": "Closed",
-                    "Mon": "Closed",
-                    "Tues": "6 am - 8 pm",
-                    "Wed": "6 am - 8 pm",
-                    "Thu": "6 am - 8 pm",
-                    "Fri": "6 am - 8 pm",
-                    "Sat": "6 am - 8 pm"
-                }
-            ]
+            "address": {
+                "street": "Leppäsillantie 3",
+                "city": "Espoo",
+                "state": "UT",
+                "postalCode": "FI-02620"
+            },
+            "main": {
+                "Sun": "Closed",
+                "Mon": "Closed",
+                "Tues": "6 am - 8 pm",
+                "Wed": "6 am - 8 pm",
+                "Thu": "6 am - 8 pm",
+                "Fri": "6 am - 8 pm",
+                "Sat": "6 am - 8 pm"
+            }
         }
     ]
 }
