@@ -44,10 +44,10 @@ for (i = 0; i < cityName.length; i++) {
     fetch(apiURL)
         .then(response => response.json())
         .then(data => {
-            document.getElementById("current"+i).textContent = "Current: " + data.weather[0].main;
-            document.getElementById("current-temp"+i).innerText = "Temp: " + Math.round(data.main.temp) + "\xB0" + "F";
-            document.getElementById("humidity"+i).textContent = "Humidity: " + data.main.humidity;
-            document.getElementById("wind"+i).textContent = "Wind Speed: " + data.wind.speed + " mph";
+            document.getElementById("current" + i).textContent = "Current: " + data.weather[0].main;
+            document.getElementById("current-temp" + i).innerText = "Temp: " + Math.round(data.main.temp) + "\xB0" + "F";
+            document.getElementById("humidity" + i).textContent = "Humidity: " + data.main.humidity;
+            document.getElementById("wind" + i).textContent = "Wind Speed: " + data.wind.speed + " mph";
 
             let temp = data.main.temp;
             let wind = data.wind.speed;
@@ -59,5 +59,42 @@ for (i = 0; i < cityName.length; i++) {
             }
 
             document.getElementById('windchill').innerHTML = "Wind Chill: " + windchill + "\xB0" + "F";
+        });
+
+    const url1 = '/Final_Project/temple_info.json';
+    const townsElement = document.getElementById('events');
+    console.log(events)
+    let cityName = document.getElementById('city').textContent;
+    let city = "";
+    for (i = 0; i < cityName.length; i++) {
+        if (i == 0) {
+            city = " Salt Lake City"
+        } else if (i == 1) {
+            city = "Washington DC"
+        } else if (i == 2) {
+            city = "London England"
+        } else {
+            city = "Helsinki Finland"
+        }
+
+    fetch(url1)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            let lists = data.lists;
+            let j = "";
+            let events = "";
+            let i = 0;
+            for (list of lists) {
+                if (list.name == city) {
+                    events = list.main;
+                    i = 0;
+                    for (main of mains) {
+                        j += `<p class="toDo">${events[i]}</p>`;
+                        i++;
+                    }
+                }
+            }
+            listsElement.innerHTML = j;
         });
 }
